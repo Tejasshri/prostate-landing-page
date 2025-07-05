@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../firebaseConfig"; // adjust path as needed
+
 const Banner = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,31 +18,23 @@ const Banner = () => {
       [e.target.name]: e.target.value,
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwf93uzHDz8MYjUOXi4LAkZAyYuqz-xOLxYxFrfXxPQkdCOZSL5iE66GzHIxRr3b4ev/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      await addDoc(collection(db, "formSubmissions"), {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        message: formData.message,
+        timestamp: new Date(),
+      });
 
-      const result = await response.json();
-      if (result.result === "success") {
-        alert("Form submitted successfully!");
-        setFormData({ name: "", phone: "", email: "", message: "" });
-      } else {
-        alert("Something went wrong!");
-      }
-    } catch (err) {
-      alert("Submission failed!");
+      alert("Form submitted successfully to Firebase!");
+      setFormData({ name: "", phone: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form. Try again.");
     }
   };
 
