@@ -1,0 +1,52 @@
+.section {
+  background: #fdf6f6;
+  padding: 50px 50px;
+  background-image: url("../../assets/experturolo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1103px;
+  align-self: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  height: 364px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  /* margin: auto; */
+}
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #952624;
+}
+
+.text p {
+  margin-top: 20px;
+  width: ;
+}
+
+.text ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.text ul li {
+    margin-top: 10px;
+}
+.image {
+  max-width: 400px;
+}
+.button {
+  background: #a32626;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}

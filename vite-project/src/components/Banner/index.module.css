@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.heroSection {
+  /* background-color: #b7e6f8; */
+  padding: 60px 100px;
+  padding-bottom: 0;
+  height: 601px;
+  background-image: url("../../assets/background.png");
+
+  background-size: cover; /* makes it fit */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.textSection {
+  flex: 1 1 50%;
+  padding-right: 20px;
+  min-width: 300px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 500;
+  color: #7b1d1d;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #7b1d1d;
+}
+
+.bookButton {
+  background-color: #a32626;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.imageSection {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.heroImage {
+  max-width: 300px;
+  height: auto;
+}
+
+.formSection {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+  width: 1104px;
+  height: 238px;
+  border-radius: 36px;
+  border-bottom: 10px solid #a32626;
+  align-self: center;
+  margin-top: -100px;
+}
+
+.formHeading {
+  color: #a32626;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input {
+  width: 230px;
+  padding: 12px;
+  border: 1px solid #ffd6c9;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.scheduleButton {
+  background-color: #a32626;
+  color: white;
+
+  border-radius: 32px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 332px;
+  height: 48px;
+}

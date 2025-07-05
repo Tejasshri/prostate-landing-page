@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.navImage{
+    height: 76px;
+    width: 150px;
+}
+
+.navbar button {
+    height: 48px;
+    width: 136px;
+    border-radius: 32px;
+    background-color: #952624;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    font-size: 14px;
+}

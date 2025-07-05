@@ -1,0 +1,49 @@
+/* WhyItHappens/index.module.css */
+.section {
+  background: #ffffff;
+  padding: 50px 20px;
+  width: 1103px;
+  border: 1px solid red;
+  align-self: center;
+  height: 359px;
+  margin-top: 30px;
+}
+.contentInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.text {
+  flex: 1;
+  min-width: 280px;
+}
+.imageBackground {
+  flex: 1;
+  min-height: 359px;
+  min-width: 280px;
+  /* background-image: url("../../assets/why-it-happens.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.imageBackground {
+  height: 100%;
+  background-color: 100%;
+  padding: 0;
+}
+
+.button {
+  background: #a32626;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
