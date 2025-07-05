@@ -21,7 +21,7 @@ const Banner = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbymE5_8dhCKSViYZrIXwEEuKlcZ4EvYFjov6qsUklzxTk4_jonbhFa2769L6OAOVdqJ/exec",
+        "https://script.google.com/macros/s/AKfycbwf93uzHDz8MYjUOXi4LAkZAyYuqz-xOLxYxFrfXxPQkdCOZSL5iE66GzHIxRr3b4ev/exec",
         {
           method: "POST",
           headers: {
